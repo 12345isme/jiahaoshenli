@@ -32,7 +32,7 @@ jobs:
         run: |
           wget -O origin.js https://raw.githubusercontent.com/bia-pain-bache/BPB-Worker-Panel/refs/heads/main/scripts/build.js
 
-      - name: 混淆 BPB worker.js
+      - name: 混淆 BPB build.js
         run: |
           javascript-obfuscator origin.js --output build.js \
             --compact true \
